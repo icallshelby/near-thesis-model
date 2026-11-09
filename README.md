@@ -9,6 +9,25 @@ and publishes them as a static dashboard. No API keys, no spreadsheets that
 only the author can reproduce: if a figure on the dashboard is wrong, anyone
 can re-run the model and show it.
 
+## How to use it
+
+**If you just want the answer (30 seconds, no code):** open the live
+dashboard — https://near-thesis-model.vercel.app — and read it top to
+bottom. The cards at the top are NEAR's vital signs right now (price, how
+much of the supply is staked, how decentralized the validator set is). Below
+them: the 365-day price chart, the honest case *for* NEAR, the honest case
+*against* it, how NEAR compares with other big L1 chains, and what the price
+would be under a few simple scenarios. That page is the whole product.
+
+**If you want to check the numbers yourself (2 minutes):** run the two
+commands in **Run it** below on any machine with Python 3. The dashboard on
+your screen is then rebuilt from live data in front of you — if any figure
+was wrong, your run proves it.
+
+**If you want the full argument:** read `ANALYSIS.md`, the written thesis.
+It is generated from the same numbers as the dashboard, so the two can never
+disagree.
+
 ## What it does
 
 `model.py` (Python 3, standard library only) queries:
@@ -79,6 +98,15 @@ circulating supply — and are labelled as such. They are not predictions.
 - Data sources and partner docs were verified against the live endpoints
   above; nothing in this repo requires a NEAR wallet or spends funds.
 - Not financial advice. Research and education only.
+
+## Sibling project (disclosure)
+
+Per Q-015 of the hackathon rules, this is one of two independent projects by
+the same person. The other is **NEAR Watchtower**
+(https://github.com/icallshelby/near-watchtower), a network-health agent
+that publishes a machine-readable health feed for NEAR (Agent Economy
+track). The two share no code: this project argues a thesis from the data;
+that one publishes a feed other agents can consume.
 
 ## License
 
