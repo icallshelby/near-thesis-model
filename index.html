@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NEAR by the Numbers — a re-runnable long-term thesis</title>
+<style>
+  body { font-family: system-ui, sans-serif; margin: 0; background: #0b0f14; color: #e6edf3; }
+  main { max-width: 900px; margin: 0 auto; padding: 32px 20px 64px; }
+  h1 { font-size: 32px; margin-bottom: 4px; }
+  h2 { margin-top: 42px; border-bottom: 1px solid #26303c; padding-bottom: 6px; }
+  .sub { color: #9fb0c3; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 12px; margin-top: 16px; }
+  .card { background: #121922; border: 1px solid #223041; border-radius: 10px; padding: 14px; }
+  .card .v { font-size: 22px; font-weight: 700; }
+  .card .k { color: #9fb0c3; font-size: 13px; margin-top: 2px; }
+  table { width: 100%; border-collapse: collapse; margin-top: 12px; font-size: 15px; }
+  td, th { padding: 8px; border-bottom: 1px solid #223041; text-align: left; }
+  li { margin: 6px 0; }
+  code { background: #121922; padding: 2px 6px; border-radius: 4px; }
+  .foot { color: #7d8ea3; font-size: 13px; margin-top: 48px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>NEAR by the Numbers</h1>
+  <p class="sub">A long-term investment thesis for NEAR Protocol, backed by live on-chain data.
+  Every figure here is produced by <code>model.py</code> from public sources and can be re-run by anyone.
+  The full written report is <code>ANALYSIS.md</code> in the repository. Snapshot: 2026-11-09T09:59:57.643347+00:00</p>
+
+  <div class="grid">
+    <div class="card"><div class="v">$3.53</div><div class="k">NEAR price (USD)</div></div>
+    <div class="card"><div class="v">$4,624,560,512</div><div class="k">Market cap</div></div>
+    <div class="card"><div class="v">-82.73%</div><div class="k">vs all-time high $20.44</div></div>
+    <div class="card"><div class="v">15.5%</div><div class="k">Return, last 365 days</div></div>
+    <div class="card"><div class="v">11.53%</div><div class="k">24h volume / market cap</div></div>
+    <div class="card"><div class="v">95.32%</div><div class="k">Supply already circulating</div></div>
+    <div class="card"><div class="v">44.31%</div><div class="k">Of supply staked</div></div>
+    <div class="card"><div class="v">9</div><div class="k">Nakamoto coefficient (validators to &gt;1/3 stake)</div></div>
+    <div class="card"><div class="v">5,477,965,357</div><div class="k">Lifetime transactions</div></div>
+    <div class="card"><div class="v">0.566s</div><div class="k">Average block time, 1 shards</div></div>
+  </div>
+
+  <h2>Price history — 365 days</h2>
+  <svg viewBox="0 0 820 180" width="100%" role="img" aria-label="NEAR price, last 365 days"><polyline fill="none" stroke="#4ade80" stroke-width="2" points="0.0,105.8 2.2,114.2 4.5,121.7 6.7,122.3 9.0,125.1 11.2,127.8 13.5,126.3 15.7,130.0 18.0,131.0 20.2,130.4 22.5,127.5 24.7,136.9 27.0,143.5 29.2,144.2 31.5,144.8 33.7,142.1 35.9,141.9 38.2,141.2 40.4,142.1 42.7,143.0 44.9,143.8 47.2,145.2 49.4,151.0 51.7,145.4 53.9,143.9 56.2,145.6 58.4,149.2 60.7,148.4 62.9,148.6 65.2,147.3 67.4,145.2 69.6,146.7 71.9,149.5 74.1,150.7 76.4,149.8 78.6,152.0 80.9,153.6 83.1,152.8 85.4,155.7 87.6,157.4 89.9,153.8 92.1,154.3 94.4,154.7 96.6,154.9 98.8,155.4 101.1,156.4 103.3,157.0 105.6,154.4 107.8,152.1 110.1,152.4 112.3,154.3 114.6,154.6 116.8,154.6 119.1,150.8 121.3,148.9 123.6,148.4 125.8,147.6 128.1,146.3 130.3,145.3 132.5,148.1 134.8,149.1 137.0,148.6 139.3,149.1 141.5,148.7 143.8,149.5 146.0,143.4 148.3,145.6 150.5,148.0 152.8,147.6 155.0,147.0 157.3,152.6 159.5,152.0 161.8,154.7 164.0,153.9 166.2,154.6 168.5,154.7 170.7,154.8 173.0,157.1 175.2,156.2 177.5,155.3 179.7,155.3 182.0,158.9 184.2,160.7 186.5,164.0 188.7,165.4 191.0,164.5 193.2,165.4 195.5,165.8 197.7,169.0 199.9,165.6 202.2,168.5 204.4,169.6 206.7,169.9 208.9,171.0 211.2,172.0 213.4,172.0 215.7,170.1 217.9,168.2 220.2,169.1 222.4,169.0 224.7,169.4 226.9,170.4 229.2,170.7 231.4,169.2 233.6,169.2 235.9,171.3 238.1,171.4 240.4,171.9 242.6,165.3 244.9,166.7 247.1,167.9 249.4,165.2 251.6,166.3 253.9,159.6 256.1,159.8 258.4,161.1 260.6,162.2 262.8,163.7 265.1,164.0 267.3,164.1 269.6,163.6 271.8,161.8 274.1,161.4 276.3,159.2 278.6,160.3 280.8,160.6 283.1,159.6 285.3,155.2 287.6,156.4 289.8,158.6 292.1,160.2 294.3,160.8 296.5,162.4 298.8,162.1 301.0,160.9 303.3,161.6 305.5,162.1 307.8,163.7 310.0,165.1 312.3,165.3 314.5,165.6 316.8,165.7 319.0,164.9 321.3,164.8 323.5,165.6 325.8,164.2 328.0,162.7 330.2,162.8 332.5,163.0 334.7,161.0 337.0,160.4 339.2,159.3 341.5,159.4 343.7,158.1 346.0,159.8 348.2,157.5 350.5,159.4 352.7,157.8 355.0,157.2 357.2,157.9 359.5,159.9 361.7,160.5 363.9,159.3 366.2,158.6 368.4,158.1 370.7,158.0 372.9,157.9 375.2,158.1 377.4,158.3 379.7,159.3 381.9,159.8 384.2,160.5 386.4,161.5 388.7,161.7 390.9,161.4 393.2,162.1 395.4,162.5 397.6,161.4 399.9,155.3 402.1,156.0 404.4,151.9 406.6,152.8 408.9,153.0 411.1,153.5 413.4,151.6 415.6,152.7 417.9,152.7 420.1,153.6 422.4,155.1 424.6,154.8 426.8,151.1 429.1,151.8 431.3,148.6 433.6,141.6 435.8,135.9 438.1,124.8 440.3,126.7 442.6,115.1 444.8,121.7 447.1,123.8 449.3,125.9 451.6,127.2 453.8,131.2 456.1,129.0 458.3,119.0 460.5,119.4 462.8,113.2 465.0,132.9 467.3,140.3 469.5,143.6 471.8,137.4 474.0,135.1 476.3,134.4 478.5,140.1 480.8,137.2 483.0,138.9 485.3,135.1 487.5,132.3 489.8,126.8 492.0,129.4 494.2,133.5 496.5,131.7 498.7,133.3 501.0,133.1 503.2,136.0 505.5,137.0 507.7,139.8 510.0,140.4 512.2,144.4 514.5,145.5 516.7,143.4 519.0,144.5 521.2,143.6 523.5,146.1 525.7,145.4 527.9,141.0 530.2,137.8 532.4,139.3 534.7,138.7 536.9,137.5 539.2,139.9 541.4,142.6 543.7,141.7 545.9,142.6 548.2,143.4 550.4,142.7 552.7,141.7 554.9,138.8 557.2,137.1 559.4,140.3 561.6,141.5 563.9,141.3 566.1,141.8 568.4,139.9 570.6,141.2 572.9,143.4 575.1,142.9 577.4,145.3 579.6,145.8 581.9,144.3 584.1,149.1 586.4,150.2 588.6,151.2 590.8,149.4 593.1,149.9 595.3,149.5 597.6,148.2 599.8,147.6 602.1,147.7 604.3,148.7 606.6,150.1 608.8,152.1 611.1,151.5 613.3,151.9 615.6,151.8 617.8,151.3 620.1,150.5 622.3,150.6 624.5,150.6 626.8,151.3 629.0,151.8 631.3,150.7 633.5,152.2 635.8,147.7 638.0,146.5 640.3,140.2 642.5,143.0 644.8,138.7 647.0,140.6 649.3,143.6 651.5,142.3 653.8,141.5 656.0,144.7 658.2,143.3 660.5,144.9 662.7,141.7 665.0,142.8 667.2,142.8 669.5,140.6 671.7,133.7 674.0,133.1 676.2,125.3 678.5,129.5 680.7,129.0 683.0,123.8 685.2,125.1 687.5,127.6 689.7,127.4 691.9,129.7 694.2,124.3 696.4,128.5 698.7,119.6 700.9,102.8 703.2,83.3 705.4,88.9 707.7,70.6 709.9,67.3 712.2,62.7 714.4,65.2 716.7,57.1 718.9,45.7 721.2,43.0 723.4,31.8 725.6,49.9 727.9,47.7 730.1,33.5 732.4,50.2 734.6,53.9 736.9,49.5 739.1,46.9 741.4,35.0 743.6,42.0 745.9,33.5 748.1,61.2 750.4,47.8 752.6,34.9 754.8,16.0 757.1,41.4 759.3,43.0 761.6,47.9 763.8,36.0 766.1,42.2 768.3,48.7 770.6,43.9 772.8,47.3 775.1,46.5 777.3,35.8 779.6,48.0 781.8,54.1 784.1,60.1 786.3,57.1 788.5,59.9 790.8,54.4 793.0,52.7 795.3,74.2 797.5,66.7 799.8,62.1 802.0,66.8 804.3,80.1 806.5,81.1 808.8,75.6 811.0,86.6 813.3,85.0 815.5,84.3 817.8,89.1 820.0,90.8"/></svg><p class="sub">365 days of daily closes. Window low $0.96 · window high $5.89 · annualized volatility 102.8% · max drawdown -68.4%</p>
+
+  <h2>The bull case, in evidence</h2>
+  <ul>
+    <li><b>Usage is real and cumulative:</b> 5,477,965,357 lifetime transactions, 371 nodes online,
+    blocks every ~0.566s across 1 shards (152,650 blocks/day).</li>
+    <li><b>Holders commit:</b> 580,980,506 NEAR — 44.31% of all supply — is staked
+    across 339 validators instead of sitting on exchanges.</li>
+    <li><b>Dilution is mostly behind it:</b> 95.32% of total supply already circulates.</li>
+    <li><b>Liquidity is large-cap grade:</b> 24h volume $533,051,366 = 11.53% of market cap —
+    among the deepest turnover in the peer table below.</li>
+    <li><b>De-rated, not dead:</b> -82.73% below the $20.44 ATH, yet the 365-day return is
+    15.5% and the network metrics above kept compounding.</li>
+  </ul>
+
+  <h2>The bear case, honestly</h2>
+  <ul>
+    <li><b>Stake is concentrated at the top:</b> Nakamoto coefficient is 9 — the top
+    9 pools together hold over a third of all stake (top 10: 36.25%).</li>
+    <li><b>Volatility is extreme:</b> 102.8% annualized over the last year, with a
+    -68.4% maximum drawdown inside the window. Position sizing is not optional.</li>
+    <li><b>Fee revenue is not in this model:</b> only metrics public APIs report directly are used; protocol fee income
+    and burn are future work (see README).</li>
+  </ul>
+
+  <h2>Peer benchmark — major L1s, market structure</h2>
+  <table>
+    <tr><th>Asset</th><th>Price</th><th>Market cap</th><th>24h vol / mcap</th><th>vs ATH</th><th>1y change</th></tr>
+    <tr><td>ETH</td><td>$2,108.43</td><td>$257,657,750,496</td><td>5.27%</td><td>-57.4%</td><td>-38.0%</td></tr>
+    <tr><td>SOL</td><td>$86.45</td><td>$51,097,108,478</td><td>5.07%</td><td>-70.5%</td><td>-45.5%</td></tr>
+    <tr><td>ADA</td><td>$0.18</td><td>$6,602,727,735</td><td>3.2%</td><td>-94.3%</td><td>-68.8%</td></tr>
+    <tr style="background:#17301f"><td>NEAR</td><td>$3.53</td><td>$4,623,484,111</td><td>11.53%</td><td>-82.7%</td><td>28.0%</td></tr>
+    <tr><td>AVAX</td><td>$8.01</td><td>$3,570,621,109</td><td>4.83%</td><td>-94.5%</td><td>-53.3%</td></tr>
+    <tr><td>SUI</td><td>$0.82</td><td>$3,408,720,624</td><td>9.51%</td><td>-84.6%</td><td>-60.7%</td></tr>
+    <tr><td>DOT</td><td>$0.87</td><td>$1,481,017,973</td><td>4.78%</td><td>-98.4%</td><td>-72.4%</td></tr>
+    <tr><td>ATOM</td><td>$1.34</td><td>$722,153,673</td><td>5.43%</td><td>-97.0%</td><td>-54.4%</td></tr>
+    <tr><td>APT</td><td>$0.58</td><td>$509,144,192</td><td>5.77%</td><td>-97.1%</td><td>-81.0%</td></tr>
+  </table>
+  <p class="sub">Market structure only (CoinGecko): NEAR trades at a large-cap size with turnover comparable to peers
+  several times its market cap, while sitting deeper below its ATH than most of the set — the "de-rated but liquid" profile the thesis prices.</p>
+
+  <h2>Valuation scenarios (arithmetic, not predictions)</h2>
+  <p class="sub">Price targets applied to today's circulating supply of 1,249,836,992 NEAR.</p>
+  <table>
+    <tr><th>Scenario</th><th>Price</th><th>Implied market cap</th><th>Multiple</th></tr>
+    <tr><td>Re-rate to $5</td><td>$5.00</td><td>$6,249,184,961</td><td>1.42x</td></tr>
+    <tr><td>Re-rate to $10</td><td>$10.00</td><td>$12,498,369,922</td><td>2.83x</td></tr>
+    <tr><td>Back to all-time high</td><td>$20.44</td><td>$25,546,668,120</td><td>5.79x</td></tr>
+    <tr><td>2x all-time high</td><td>$40.88</td><td>$51,093,336,239</td><td>11.58x</td></tr>
+  </table>
+
+  <h2>Method &amp; sources</h2>
+  <ul>
+    <li>NearBlocks API — supply, price, market cap, volume, lifetime transactions, nodes online.</li>
+    <li>NEAR mainnet RPC — chain status and the live validator set; stake shares and the Nakamoto coefficient are summed directly.</li>
+    <li>CoinGecko — 365 days of daily closes and the L1 peer set.</li>
+    <li>Raw responses committed in <code>data/snapshot_raw.json</code>; derived values in <code>data/metrics.json</code>.</li>
+  </ul>
+  <p>Re-run it yourself: <code>python3 model.py &amp;&amp; python3 build_dashboard.py</code> — Python 3 standard library only, no API keys.</p>
+
+  <p class="foot">Built by team zarroww for the NEAR Hackathon (Investment Thesis track). Research and education only — not financial advice.</p>
+</main>
+</body>
+</html>
