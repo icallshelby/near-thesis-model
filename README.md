@@ -28,9 +28,9 @@ and writes:
 - `ANALYSIS.md` — the full written thesis, regenerated from the same metrics,
   so the report can never drift from the data
 
-A GitHub Actions workflow (`.github/workflows/refresh-data.yml`) re-runs the
-model daily and commits the refreshed data and report — the thesis stays
-current on its own, and the commit history is the proof.
+Refreshing the thesis is the same two commands in **Run it** below: re-run
+them, then commit the regenerated `data/`, `index.html` and `ANALYSIS.md` —
+the commit history is the audit trail of every snapshot.
 
 ## Run it
 
